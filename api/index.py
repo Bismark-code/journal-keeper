@@ -11,7 +11,8 @@ from contextlib import contextmanager, asynccontextmanager
 from pathlib import Path
 from typing import Optional
 
-sys.path.insert(0, "/home/z/my-project")
+# Add project root to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from fastapi import FastAPI, UploadFile, File, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
