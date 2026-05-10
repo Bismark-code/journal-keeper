@@ -1,0 +1,13 @@
+# Приватный мультимодальный дневник — зависимости
+
+# Основные
+ollama>=0.4.0          # LLM-редактор (Ollama API)
+Pillow>=10.0.0         # Работа с изображениями
+
+# OCR — выберите нужные движки
+pytesseract>=0.3.10    # Tesseract OCR (требует установки Tesseract)
+# easyocr>=1.7.0       # EasyOCR (раскомментировать при необходимости; тяжёлая установка)
+
+# Внешние OCR API (опционально)
+google-generativeai>=0.4.0  # Google Gemini API
+httpx>=0.25.0              # HTTP-клиент для Z.ai API
